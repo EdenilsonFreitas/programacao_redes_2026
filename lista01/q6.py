@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path = Path("acessos.txt")
+path = Path(__file__).parent / "documentos" / "acessos.txt"
 
 conteudo = path.read_text()
 

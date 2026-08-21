@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path = Path("Lista1/documentos/alunos.txt")
+path = Path(__file__).parent / "documentos" / "alunos.txt"
 
 numero_linhas = len(path.read_text().splitlines())
 

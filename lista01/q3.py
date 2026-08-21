@@ -1,7 +1,7 @@
 
 from pathlib import Path
 
-path = Path("Lista1/documentos/nomes.txt")
+path = Path(__file__).parent / "documentos" / "nomes.txt"
 
 conteudo = path.read_text()
 

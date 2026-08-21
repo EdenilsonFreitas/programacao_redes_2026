@@ -1,5 +1,6 @@
 from pathlib import Path
-path = Path("Lista1/documentos/usuarios.txt")
+
+path = Path(__file__).parent / "documentos" / "usuarios.txt"
 
 nome = input("Digite o nome: ")
 idade = input("Digite a idade: ")
